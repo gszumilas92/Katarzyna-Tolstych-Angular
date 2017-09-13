@@ -1,5 +1,3 @@
-.welcome {
-    margin-top: 70px;
-    font-size: 34px;
-    text-transform: capitalize;
+.paragraphs div:first-child {
+    margin-top: 5vh;
 }
