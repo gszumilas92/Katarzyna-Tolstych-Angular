@@ -1,0 +1,35 @@
+.main-nav {
+    display: flex;
+    margin: 0 auto;    
+    background-color: red;
+    justify-content: space-between;
+}
+
+.list-group {
+    display: flex;
+    width: 100%;
+}
+
+.right { 
+    justify-content: flex-end;
+    margin-right: 2vw;    
+}
+
+.left {
+    margin-left: 2vw;    
+    justify-content: flex-start;
+}
+
+.list-group a {
+    display: flex;    
+    padding: 33px 40px;
+    font-size: 24px;
+    background-color: blue;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.list-group a:hover {
+    background-color: red;
+}

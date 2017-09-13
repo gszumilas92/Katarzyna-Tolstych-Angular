@@ -1,0 +1,17 @@
+.col {
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer-list {
+    margin-top: 20px;
+}
+
+li {
+    line-height: 30px;
+    font-size: 22px;
+}
