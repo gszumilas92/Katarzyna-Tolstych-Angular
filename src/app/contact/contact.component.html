@@ -1,3 +1,39 @@
-<p>
-  contact works!
-</p>
+<div class="container-fluid">
+  <div class="row center-columns">
+    <h2>Kontakt</h2>
+    <p class="sub-heading">Umów się już dziś!</p>
+  </div>
+
+  <div class="row">
+    <div class="col-6 mx-auto">
+
+      <form action="">
+        <fieldset class="col-10 m-auto">
+          <label for="username" class="mx-auto">
+            Imię/Pseudonim
+            <input type="text" name="username" id="username" placeholder="Twoje imię">
+          </label>
+          <label for="email" class="mx-auto">
+            Email
+            <input type="email" name="email" id="email" placeholder="Twój email">
+          </label>
+          <label for="contact" class="mx-auto">
+            Preferowana forma kontaktu
+            <select name="type">
+                <option value="personal" selected>Osobista</option>
+                <option value="skype">Skype</option>
+                <option value="email">Email</option>
+            </select>
+          </label>
+        </fieldset>
+        <input 
+          type="submit"
+          name="submit"
+          value="WYŚLIJ"
+          class="mx-auto submit-button">
+      </form>
+
+    </div>
+
+  </div>
+</div>

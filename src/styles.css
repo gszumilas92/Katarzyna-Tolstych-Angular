@@ -49,6 +49,7 @@ h4 {
 /*Pseudo classess*/
 .sub-heading {
     font-size: 34px;
+    margin: 0;
 }
 
 .paragraphs div:first-child {

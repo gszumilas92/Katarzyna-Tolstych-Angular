@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+form, input, select {
+    letter-spacing: 1.4px;
+    border: 6px solid rgba(72, 173, 74, 0.25);
+    font-size: 24px;
+}
+
+option {
+    font-size: 120%;
+}
+
+input, select {
+    border-radius: 20px;
+    padding: 3%;
+    margin: 2% 0 6% 0;
+    font-size: 85%;
+    margin-left: -6%;
+    outline: none;
+}
+
+fieldset {
+    padding: 10% 0;
+    min-width: 0;
+    border: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#ACACAC;
+}
+
+.submit-button {
+    margin: 0 0 5% 0;
+    padding: 3% 13%;
+    border: none;
+    background-color: rgba(72, 173, 74, 0.25);
+    letter-spacing: -0.2px;
+    display:flex;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+}
