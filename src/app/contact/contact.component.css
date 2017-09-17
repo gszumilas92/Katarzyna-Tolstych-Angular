@@ -2,6 +2,7 @@ form {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
+    margin-top: 5vh;
 }
 
 form, input, select {
@@ -49,4 +50,8 @@ label {
     justify-content: center;
     width: 30%;
     text-align: center;
+}
+
+h2::after {
+    border-color: rgba(72, 173, 74, 0.25);
 }
