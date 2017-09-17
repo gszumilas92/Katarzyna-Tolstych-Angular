@@ -27,7 +27,7 @@ h1 {
 h2 {
     position: relative;
     font-size: 64px;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 70px;
     font-weight: 300;
 }
@@ -48,7 +48,7 @@ h4 {
     font-size: 26px;
     font-weight: 300;
 }
-/*Pseudo classess*/
+
 .sub-heading {
     font-size: 34px;
     margin: 0;
