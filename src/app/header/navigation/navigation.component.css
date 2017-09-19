@@ -1,7 +1,7 @@
 .main-nav {
     display: flex;
     margin: 0 auto;    
-    background-color: red;
+    background-color: rgba(52, 114, 67, 0.95);
     justify-content: space-between;
 }
 
@@ -24,12 +24,12 @@
     display: flex;    
     padding: 33px 40px;
     font-size: 24px;
-    background-color: blue;
+    background-color: #347244;
     color: #fff;
     text-transform: uppercase;
     white-space: nowrap;
 }
 
 .list-group a:hover {
-    background-color: red;
+    background-color: #3F8A51;
 }

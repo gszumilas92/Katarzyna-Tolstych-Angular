@@ -5,6 +5,9 @@
 
 .footer {
     margin-top: 10vh;
+    background-color: #347244;
+    color: #fff;
+    font-weight: 300;
 }
 
 .footer-list {
