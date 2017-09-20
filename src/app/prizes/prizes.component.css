@@ -41,3 +41,12 @@ tfoot th {
 h2::after {
     border-color: #F1C881;
 }
+
+td:first-child, td:last-child {
+    text-align: left;
+    padding-left: 1vw;
+}
+
+.main-paragraph {
+    line-height: 35px;
+}
