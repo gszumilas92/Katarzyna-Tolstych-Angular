@@ -1,34 +1,25 @@
 .main-nav {
     display: flex;
     margin: 0 auto;    
-    background-color: rgba(52, 114, 67, 0.95);
+    background-color: rgba(52, 114, 67, 1);
     justify-content: space-between;
 }
 
 .list-group {
     display: flex;
-    width: 100%;
-}
-
-.right { 
-    justify-content: flex-end;
-    margin-right: 2vw;    
-}
-
-.left {
-    margin-left: 2vw;    
-    justify-content: flex-start;
+    justify-content: center;    
+    width: 100vw;
 }
 
 .list-group a {
-    display: flex;    
-    padding: 33px 40px;
+    display: flex;
+    padding: 3vh 6vw;
     font-size: 24px;
     background-color: #347244;
     color: #fff;
     text-transform: uppercase;
     white-space: nowrap;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .list-group a:hover {

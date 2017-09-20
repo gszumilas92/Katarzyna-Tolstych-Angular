@@ -14,6 +14,7 @@ import { Routes, PreloadAllModules, RouterModule } from "@angular/router";
 import { OfferComponent } from './offer/offer.component';
 import { ContactComponent } from './contact/contact.component';
 import { PrizesComponent } from './prizes/prizes.component';
+import { PrizesTableComponent } from './prizes/prizes-table/prizes-table.component';
 
 //Check Viability
 const appRoutes: Routes = [
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     AboutMeComponent,
     OfferComponent,
     ContactComponent,
-    PrizesComponent
+    PrizesComponent,
+    PrizesTableComponent
   ],
   imports: [
     BrowserModule,

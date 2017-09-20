@@ -1,16 +1,16 @@
 .header {
     background-image: url("../../assets/2.jpg");
-    height: 70vh;
+    height: 80vh;
     background-size: cover;
 }
 
 .sub-header {
-    margin-left: 8vw;
-    margin-top: 25vh;
+    margin-left: 12vw;
+    margin-top: -20vh;
 }
 
 h1 {
-    margin: 10px 0;
+    padding: 40vh 0 1.5vh 0;
 }
 
 .author {
@@ -23,3 +23,4 @@ h1 {
     line-height: 34px;
     margin: 60px 0;
 }
+
