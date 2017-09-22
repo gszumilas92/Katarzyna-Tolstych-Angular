@@ -1,9 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-
 body {
     font-family: 'Lato', Helvetica, Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+app-header, app-navigation {
+    color: #fff;
 }
 
 p {
@@ -16,9 +23,6 @@ ul {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-}
 
 p {
     font-size: 26px;
@@ -32,9 +36,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
+    padding: 40vh 0 1.5vh 0;    
     font-size: 66px;
     display: flex;
-    color: #88178B;
+    color: inherit;
 }
 
 h2 {

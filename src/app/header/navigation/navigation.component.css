@@ -1,7 +1,7 @@
 .main-nav {
     display: flex;
     margin: 0 auto;    
-    background-color: rgba(52, 114, 67, 1);
+    /* background-color: #347244 */
     justify-content: space-between;
 }
 
@@ -15,8 +15,8 @@
     display: flex;
     padding: 3vh 6vw;
     font-size: 24px;
-    background-color: #347244;
-    color: #fff;
+    color: inherit;    
+    /* background-color: #347244; */
     text-transform: uppercase;
     white-space: nowrap;
     font-weight: 400;

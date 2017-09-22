@@ -1,16 +1,26 @@
 .footer {
     margin-top: 10vh;
-    padding: 4vh 0;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    /*padding 4vh 0 was causing grid error*/
     background-color: #347244;
     color: #fff;
     font-weight: 300;
 }
 
-.footer-list {
-    margin-top: 20px;
-}
-
 li {
     line-height: 30px;
     font-size: 22px;
+    width: 100%;
+    text-align: left;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+.col-3, ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
