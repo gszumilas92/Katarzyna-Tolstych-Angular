@@ -3,14 +3,15 @@ strefamyśli.pl design
     3. Strzalki zmieniajace podstrony
 
 7. Dyplom powieksza sie po kliknieciu
-
+14. Header Ciemniej tylko navbar
+16. Navigation: a::after element to full a size
 
 //TROUBLE AREA
 4. Tło sekcji głównej sekcji ["obramowanie, bo za pusto"]
 8. Edit font-weight of h2 + font-weight of navbar + font-weight of h4
-14. Redesign, Review Navbar For Logo
 
 //TODO NOW
+15. Redesign, Review Navbar For Logo
 
 //Done + TODO by Client
 5. Przydatne linki w footerze => Wystarczy dopasować tekst
