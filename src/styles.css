@@ -46,7 +46,7 @@ h1 {
 h2 {
     position: relative;
     font-size: 64px;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     margin-bottom: 70px;
     font-weight: 400;
 }
@@ -95,7 +95,7 @@ h4 {
 /*Positions*/
 .relative { position:relative; }
 .absolute { position:absolute;}
-
+/*Size*/
 
 
 /*Some additional grid options*/

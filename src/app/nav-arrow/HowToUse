@@ -1,0 +1,7 @@
+Step 1.
+Place arrows in template
+
+Step 2.
+In typescript file:
+change array to current routing paths example below:
+array = ['home','about','offer','prizes','contact'];

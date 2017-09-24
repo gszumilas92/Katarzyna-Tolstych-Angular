@@ -38,7 +38,7 @@ a::after {
 }    
 
 a:hover::after {
-    width: 4vw;
+    width: 100%;
 }    
 
 a:hover::after,

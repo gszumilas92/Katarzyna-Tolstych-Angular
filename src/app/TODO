@@ -1,17 +1,16 @@
 strefamyśli.pl design
     2. Menu Specjalizujemy się w (icony)
-    3. Strzalki zmieniajace podstrony
 
 7. Dyplom powieksza sie po kliknieciu
-14. Navbar: dark layer
-15. Redesign, Review Navbar For Logo
-16. Navigation: a::after element to full a size
+14. Navbar: dark layer // waiting for header photo
 
 //TROUBLE AREA
 4. Tło sekcji głównej sekcji ["obramowanie, bo za pusto"]
 8. Edit font-weight of h2 + font-weight of navbar + font-weight of h4
 
+
 //TODO NOW
+18. Animacja zmiany strony strzałkami
 
 //Done + TODO by Client
 5. Przydatne linki w footerze => Wystarczy dopasować tekst
@@ -19,18 +18,27 @@ strefamyśli.pl design
 
 //Done Tasks
 1. Fix Grid for prizes + reduce size of prizes
+3. Strzalki zmieniajace podstrony
 6. O mnie : Dorzucić span main paragraph
 10. Cennik i Kontakt tej samej wielkości! // class .tables
 11. Center Footer Text!!!
 12. Split Label from inputs
 13. Fix grid for footer
-
+15. Redesign, Review Navbar For Logo
+16. Navigation: a::after element to full a size
+17. Navigation: Przeniesienie routera do odzielnego komponentu
 
 //Undone Sections
+
+//Done Sections
+Header
+Footer
+Oferta
 Strona glowna
 O mnie
 Cennik
 Kontakt
 
-//Done Sections
-Oferta
+NOTEANIMATIONS
+You then import trigger , state , style  etc 
+from @angular/animations  instead of @angular/core 

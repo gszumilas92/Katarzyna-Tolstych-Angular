@@ -1,0 +1,27 @@
+.arrow {
+    content: "";
+    width: 4vw;
+    height: 4vw;
+    transform: rotate(135deg);
+    cursor: pointer;
+}
+
+.arrow-right {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    margin-right: 3vw;
+}
+
+.arrow-left {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    margin-left: 3vw;
+}
+
+.arrow-container {
+    padding-top: 10vh;
+    width:100%;
+    position: sticky;
+    top: 50%;
+    z-index: 4;
+}
