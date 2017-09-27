@@ -4,11 +4,13 @@
 }
 
 .certificates {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .certificates img {
-    max-height: 29vh;
+    max-width: 350px;
+    max-height: 350px;
     cursor: pointer;
+    margin: 20px 0;
 }

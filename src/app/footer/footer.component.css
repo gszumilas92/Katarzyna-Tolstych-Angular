@@ -2,10 +2,8 @@
     margin-top: 10vh;
     padding-top: 4vh;
     padding-bottom: 4vh;
-    /*padding 4vh 0 was causing grid error*/
-    /* background-color: #347244; */
-    /* background:linear-gradient(rgba(0, 105, 0, 0.85), rgba(0, 55, 0, 1)); */
-    background:linear-gradient(rgba(0, 80, 0, 0.85), rgba(0, 45, 0, 1));
+    /* background:linear-gradient(rgba(0, 80, 0, 0.85), rgba(0, 45, 0, 1)); */
+    background:linear-gradient(rgba(0, 90, 0, 1), rgba(0, 45, 0, 1));
     color: #fff;
     font-weight: 300;
 }

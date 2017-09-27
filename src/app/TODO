@@ -1,20 +1,22 @@
 strefamyśli.pl design
-    2. Menu Specjalizujemy się w (icony)
 
-7. Dyplom powieksza sie po kliknieciu
-14. Navbar: dark layer // waiting for header photo
 
 //TROUBLE AREA
 4. Tło sekcji głównej sekcji ["obramowanie, bo za pusto"]
 8. Edit font-weight of h2 + font-weight of navbar + font-weight of h4
 
-
 //TODO NOW
-18. Animacja zmiany strony strzałkami
+7. Dyplom powieksza sie po kliknieciu
+    //Zablokować możliwość zaznaczania tekstu
+    //Zablokować zmianę podstrony
+    //Ustawić na body oveflow:hidden;
+    //Ustawić otwieranie modala z transycją po klinknięciu w dyplom
 
 //Done + TODO by Client
-5. Przydatne linki w footerze => Wystarczy dopasować tekst
-9. Header text color h1 => purple + przesuniecie obrazka w headerze
+2. Menu Specjalizujemy się w (icony) // Question : Do czego mają nawigować icony?
+5. Przydatne linki w footerze // Question : Jakie mają się znajdować linki?
+9. Omówić overflow-y na body. // Question : Czy pasek przewijania ma być ostylowany? Nie dotyczy wszystkich przegladrek! (np. Firefox) //webkit
+21. Pokazać zaznaczone sekcje w navigacji. // Question : class a:hover::after ?
 
 //Done Tasks
 1. Fix Grid for prizes + reduce size of prizes
@@ -24,9 +26,13 @@ strefamyśli.pl design
 11. Center Footer Text!!!
 12. Split Label from inputs
 13. Fix grid for footer
+14. Navbar: dark layer // waiting for header photo
 15. Redesign, Review Navbar For Logo
 16. Navigation: a::after element to full a size
 17. Navigation: Przeniesienie routera do odzielnego komponentu
+18. Animacja zmiany strony strzałkami
+19. Przesunięcie obrazka w headerze
+20. Dopasować kolorystycznie header i footer.
 
 //Undone Sections
 
@@ -42,3 +48,7 @@ Kontakt
 NOTEANIMATIONS
 You then import trigger , state , style  etc 
 from @angular/animations  instead of @angular/core 
+
+
+Click Arrow => nextPage()
+=> ngOnDestroy(oldComponent) => ngOnInit(newComponent)

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -10,8 +11,8 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
-  
   
 }

@@ -1,15 +1,35 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+import { ModalService } from '../modal/modal.service';
 
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.css']
+  styleUrls: ['./about-me.component.css'],
+  providers: [ModalService],
+  animations: [
+    trigger('componentState', [
+      state('visible', style({
+        opacity: 1
+      })),
+      state('hidden', style({
+        opacity: 0
+      })),
+      transition('hidden => visible', animate(500)),
+    ]),
+  ]
 })
 export class AboutMeComponent implements OnInit {
 
   constructor() { }
 
+  state = 'hidden';
+  timeoutID
+
   ngOnInit() {
+    this.timeoutID = setTimeout(() => {
+      this.state = 'visible'
+    }, 100);
   }
 
 }

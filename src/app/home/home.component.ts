@@ -6,16 +6,14 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    trigger('outletState', [
-      state('fadeIn', style({
-        opacity: 1,
-        transform: 'translateX(0)',
+    trigger('componentState', [
+      state('visible', style({
+        opacity: 1
       })),
-      state('fadeOut', style({
-        opacity: 0,
-        transform: 'translateX(50vw)',
+      state('hidden', style({
+        opacity: 0
       })),
-      transition('fadeIn => fadeOut', animate(700) )
+      transition('hidden => visible', animate(500))
     ]),
   ]
 })
@@ -24,13 +22,13 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  state = 'hidden';
+  timeoutID
 
-  state="fadeIn"
-  
-  animate(){
-    this.state == 'fadeIn' ? this.state = "fadeOut" : this.state = "fadeIn";
-  }  
+  ngOnInit() {
+    this.timeoutID = setTimeout(() => {
+      this.state = 'visible'
+    }, 100);
+  }
 
 }
