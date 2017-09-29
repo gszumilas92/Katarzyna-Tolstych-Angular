@@ -2,10 +2,8 @@
     content: "";
     width: 4vw;
     height: 4vw;
-    transform: rotate(135deg);
     cursor: pointer;
-    position: sticky;
-    top: 50%;
+    display: flex;
 }
 
 .arrow-right {
@@ -13,6 +11,7 @@
     border-left: 2px solid #000;
     margin-right: 3vw;
     left: 100%;
+    transform: rotate(135deg);
 }
 
 .arrow-left {
@@ -20,12 +19,17 @@
     border-right: 2px solid #000;
     margin-left: 3vw;
     left: 0;
+    transform: rotate(135deg);
 }
 
 .arrow-container {
-    padding-top: 10vh;
-    width:100%;
+    margin-top: 10vh;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox-wrapper {
     position: sticky;
     top: 50%;
-    z-index: 4;
 }
