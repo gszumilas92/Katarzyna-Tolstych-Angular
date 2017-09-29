@@ -35,8 +35,10 @@ export class AboutMeComponent implements OnInit {
   
   openModal(src) {
     //send data to Subject
-    this.modalService.mySubject.next( {display: 'block', src: src} );
+    // this.modalService.mySubject.next( {display: 'block', src: src} );
+    this.modalService.mySubject.next( {state: 'visible', src: src} );
     
+
   }
 
   ngOnInit() {

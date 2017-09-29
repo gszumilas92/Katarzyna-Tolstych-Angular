@@ -4,18 +4,22 @@
     height: 4vw;
     transform: rotate(135deg);
     cursor: pointer;
+    position: sticky;
+    top: 50%;
 }
 
 .arrow-right {
     border-top: 2px solid #000;
     border-left: 2px solid #000;
     margin-right: 3vw;
+    left: 100%;
 }
 
 .arrow-left {
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
     margin-left: 3vw;
+    left: 0;
 }
 
 .arrow-container {
