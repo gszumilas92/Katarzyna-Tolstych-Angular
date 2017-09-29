@@ -6,9 +6,9 @@ import { ModalService } from '../modal/modal.service';
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.css'],
-  providers: [ModalService],
+  providers: [],
   animations: [
-    trigger('componentState', [
+    trigger('componentState', [ 
       state('visible', style({
         opacity: 1
       })),
@@ -21,15 +21,30 @@ import { ModalService } from '../modal/modal.service';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: ModalService) { }
 
   state = 'hidden';
   timeoutID
+
+  diplomes = [
+    { src: "assets/doradca-personalny.jpg", alt: "doradca personalny" },
+    { src: "assets/promocja-zdrowia.jpg", alt: "promocja zdrowia" },
+    { src: "assets/dyplom-rtz.jpg", alt: "dyplom rtz" },
+    { src: "assets/psychospoleczne-zagrozenia.jpg", alt: "certyfikat psychospoleczne zagrozenia" }
+  ];
+  
+  openModal(src) {
+    //send data to Subject
+    this.modalService.mySubject.next( {display: 'block', src: src} );
+    
+  }
 
   ngOnInit() {
     this.timeoutID = setTimeout(() => {
       this.state = 'visible'
     }, 100);
+
+
   }
 
 }

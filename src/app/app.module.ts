@@ -12,6 +12,7 @@ import { NavigationComponent } from './header/navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavArrowComponent } from './nav-arrow/nav-arrow.component';
 import { ModalComponent } from './modal/modal.component';
+import { ModalService } from './modal/modal.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { ModalComponent } from './modal/modal.component';
     AppRoutingModule,
     BrowserAnimationsModule 
   ],
-  providers: [],
+  providers: [ModalService],
   bootstrap: [AppComponent]
 })
 

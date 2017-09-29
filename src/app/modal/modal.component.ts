@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from './modal.service';
 
 @Component({
   selector: 'app-modal',
@@ -7,15 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(private modalService: ModalService) { }
 
   display
+  src
 
   closeModal() {
-    this.display == 'none' ? this.display = "block" : this.display = 'none'
+    this.display = 'none';
   }
-  
+
+  ngOnInit() { 
+    this.modalService.mySubject.subscribe (
+      (data) => {
+        this.display = data['display'];
+        this.src = data['src'];
+      }
+    )
+  }
+
 }

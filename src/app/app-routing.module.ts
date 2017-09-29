@@ -7,6 +7,7 @@ import { OfferComponent } from './offer/offer.component';
 import { PrizesComponent } from './prizes/prizes.component';
 import { PrizesTableComponent } from './prizes/prizes-table/prizes-table.component';
 import { ContactComponent } from './contact/contact.component';
+import { CommonModule } from '@angular/common';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
         PrizesTableComponent,
     ],
     imports: [
+        CommonModule,
         RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})
     ],
     exports: [RouterModule]

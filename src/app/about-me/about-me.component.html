@@ -73,10 +73,13 @@
     </div>
     <div class="col-9 certificates mx-auto">
         <div class="row">
-            <img class="col" src="../../assets/doradca-personalny.jpg" alt="certyfikat doradca personalny">
-            <img class="col" src="../../assets/promocja-zdrowia.jpg" alt="promocja-zdrowia">
-            <img class="col" src="../../assets/dyplom-rtz.jpg" alt="dyplom rtz">
-            <img class="col" src="../../assets/psychospoleczne-zagrozenia.jpg" alt="certyfikat psychospoleczne zagrozenia">
+            <img 
+                *ngFor="let diplom of diplomes"
+                (click)="openModal(diplom.src)"
+                class="col"
+                src={{diplom.src}}
+                alt={{diplom.alt}}
+            >
         </div>
     </div>
 </div>

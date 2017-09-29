@@ -1,7 +1,8 @@
+import { Subject } from "rxjs/Subject";
+
 export class ModalService {
-
-  constructor() { }
-
   
-  
+  mySubject = new Subject()
+  openedDiplom = "../../assets/doradca-personalny.jpg";
+
 }
