@@ -1,7 +1,8 @@
+/* Body */
 .arrow {
     content: "";
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     cursor: pointer;
     display: flex;
 }
@@ -22,8 +23,9 @@
     transform: rotate(135deg);
 }
 
+/* Containers */
 .arrow-container {
-    margin-top: 10vh;
+    padding-top: 10vh;
     z-index: 4;
     display: flex;
     justify-content: space-between;
@@ -32,4 +34,16 @@
 .flexbox-wrapper {
     position: sticky;
     top: 50%;
+}
+
+/* Animations */
+.arrow-right:hover {
+    border-top: 4px solid #000;
+    border-left: 4px solid #000;
+    transition: 0.2s;
+}
+
+.arrow-left:hover {
+    border-bottom: 4px solid #000;
+    border-right: 4px solid #000;
 }

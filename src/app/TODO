@@ -6,11 +6,12 @@ strefamyśli.pl design
 8. Edit font-weight of h2 + font-weight of navbar + font-weight of h4
 
 //TODO NOW
+22. Animate nice arrows
 7. Dyplom powieksza sie po kliknieciu
     //Zablokować możliwość zaznaczania tekstu
     //Ustawić na body oveflow:hidden;
-
     //Ustawić otwieranie modala z transycją po klinknięciu w dyplom
+
 
 //Done + TODO by Client
 2. Menu Specjalizujemy się w (icony) // Question : Do czego mają nawigować icony?
