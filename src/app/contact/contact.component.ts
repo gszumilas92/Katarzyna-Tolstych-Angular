@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -23,6 +24,10 @@ export class ContactComponent implements OnInit {
 
   state = 'hidden';
   timeoutID
+
+  onSubmit(form: NgForm) {
+    console.log(form.form.controls.username.valid)
+  }
 
   ngOnInit() {
     this.timeoutID = setTimeout(() => {

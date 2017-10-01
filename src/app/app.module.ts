@@ -25,13 +25,13 @@ import { ModalService } from './modal/modal.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
     AppRoutingModule,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule
   ],
   providers: [ModalService],
   bootstrap: [AppComponent]
 })
 
 export class AppModule { }
+

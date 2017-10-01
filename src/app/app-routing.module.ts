@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { HomeComponent } from "./home/home.component";
@@ -7,7 +9,6 @@ import { OfferComponent } from './offer/offer.component';
 import { PrizesComponent } from './prizes/prizes.component';
 import { PrizesTableComponent } from './prizes/prizes-table/prizes-table.component';
 import { ContactComponent } from './contact/contact.component';
-import { CommonModule } from '@angular/common';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -28,9 +29,10 @@ const appRoutes: Routes = [
         OfferComponent,
         ContactComponent,
         PrizesComponent,
-        PrizesTableComponent,
+        PrizesTableComponent
     ],
     imports: [
+        FormsModule,
         CommonModule,
         RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})
     ],

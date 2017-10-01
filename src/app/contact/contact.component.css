@@ -2,38 +2,37 @@ form {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
 }
 
 form, input, select {
     letter-spacing: 1.4px;
-    border: 6px solid rgba(72, 173, 74, 0.25);
-    font-size: 24px;
+    border: 4px solid rgba(11, 124, 11, 0.4);
+}
+
+form, input, select, label, span {
+    font-size: 105%;
 }
 
 option {
-    font-size: 120%;
+    font-size: 115%;
 }
 
-input, select {
-    border-radius: 20px;
-    padding: 3%;
-    margin: 2% 0 6% 0;
-    font-size: 85%;
-    margin-left: -6%;
+input, select, label, span {
+    border-radius: 1.5vw;
+    padding: 2%;
     outline: none;
 }
 
+
 fieldset {
-    padding: 10% 0;
-    min-width: 0;
+    padding: 8% 0;
     border: none;
+    display: flex;
 }
 
 label {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
+    margin-top: 1%;    
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -43,15 +42,47 @@ label {
 .submit-button {
     margin: 0 0 5% 0;
     padding: 3% 13%;
-    border: none;
-    background-color: rgba(72, 173, 74, 0.25);
+    background-color: rgba(11, 150, 11, 0.6);
     letter-spacing: -0.2px;
     display:flex;
     justify-content: center;
     width: 30%;
     text-align: center;
+    border-radius: 1.5vw;
+    border: 1px solid #F5F5F5;
+    outline: none;
+}
+
+.submit-button:focus {
+    border-color: rgba(11, 100, 11, 1);
+    border-width: 1px;
+}
+
+button[type="submit"]:disabled {
+    color: #B4B4B4;
+    background-color: rgba(11, 150, 11, 0.15);
 }
 
 h2::after {
+    border-color: rgba(11, 124, 11, 0.4);
+}
+
+/*Validation Css*/
+span {
+    font-size: 80%;
+    text-align: center;
+    color: #FF0000;
+    font-weight: 600;
+}
+
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched {
+    border-color: rgba(255, 0, 0, 0.45);
+}
+
+/* fieldset .ng-valid {
     border-color: rgba(72, 173, 74, 0.25);
+} */
+
+input, select, button {
+    transition: 0.6s;
 }

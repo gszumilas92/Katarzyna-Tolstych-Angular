@@ -20,7 +20,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+
+  ) {}
 
   state = 'hidden';
   timeoutID

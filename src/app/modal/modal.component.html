@@ -1,8 +1,6 @@
 <div [@modalState]="state" class="modal">
-  <div class="close-button" (click)="closeModal()"></div>
+  <div [@imageState]="state" class="close-button" (click)="closeModal()"></div>
   <div class="image-container">
-    <img src={{src}} alt="doradca personalny">
+    <img [@imageState]="state" src={{src}} alt="doradca personalny">
   </div>
 </div>
-
-<!-- [style.display]="display" -->

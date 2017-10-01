@@ -7,39 +7,43 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css'],
   animations: [
-    trigger('modalState', [ 
+    trigger('modalState', [
       state('visible', style({
-        display: 'block',
-        opacity: 1
+        display: 'block'
       })),
       state('hidden', style({
-        // display: 'none',
-        opacity: 0
+        display:'none'
+      }))
+    ]),
+    trigger('imageState', [
+      state('visible', style({
+        transform: 'scale(1)'
       })),
-      transition('hidden <=> visible', animate(500))
-    ]
-  )]
-})
+      transition('hidden => visible', [
+        style({
+          //Beginning style for image
+          transform: 'scale(0.2)'
+        }),
+        animate(700)
+      ])
+    ])
+    
+  ]
+    
+  })
 export class ModalComponent implements OnInit {
 
   constructor(private modalService: ModalService) { }
 
   display
-  state
+  state = 'hidden'
   src
 
   closeModal() {
-    // this.display = 'none';
-    this.state = 'hidden'
+    this.state = 'hidden';
   }
 
   ngOnInit() { 
-    // this.modalService.mySubject.subscribe (
-    //   (data) => {
-    //     this.display = data['display'];
-    //     this.src = data['src'];
-    //   }
-    // )
     this.modalService.mySubject.subscribe (
       (data) => {
         this.state = data['state'];
