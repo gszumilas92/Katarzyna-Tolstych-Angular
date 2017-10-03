@@ -28,6 +28,7 @@ export class PrizesComponent implements OnInit {
     this.timeoutID = setTimeout(() => {
       this.state = 'visible'
     }, 100);
+    document.getElementById('prizes').scrollIntoView()
   }
 
 }

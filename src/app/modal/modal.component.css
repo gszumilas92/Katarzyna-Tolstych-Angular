@@ -9,11 +9,12 @@
 
 .image-container {
     /* background: #fff; */
-    position: absolute;
+    position: fixed;
     width: 40%;
     height: 80%;
     top: 10%;
     left: 30%;
+    z-index: 9999;
 }
 
 img {

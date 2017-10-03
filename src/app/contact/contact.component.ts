@@ -26,13 +26,14 @@ export class ContactComponent implements OnInit {
   timeoutID
 
   onSubmit(form: NgForm) {
-    console.log(form.form.controls.username.valid)
+    
   }
 
   ngOnInit() {
     this.timeoutID = setTimeout(() => {
       this.state = 'visible'
     }, 100);
+    document.getElementById('contact').scrollIntoView()
   }
 
 }

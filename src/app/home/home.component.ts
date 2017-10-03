@@ -31,6 +31,9 @@ export class HomeComponent implements OnInit {
     this.timeoutID = setTimeout(() => {
       this.state = 'visible'
     }, 100);
+
+    document.getElementById('home').scrollIntoView()
+
   }
 
 }

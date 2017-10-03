@@ -1,4 +1,4 @@
-<div [@componentState]="state" class="container-fluid">
+<div [@componentState]="state" class="container-fluid" id='contact'>
     <div class="row center-columns">
         <h2>Kontakt</h2>
         <p class="sub-heading">Umów się już dziś!</p>
@@ -8,17 +8,18 @@
             <form (ngSubmit)="onSubmit(f)" #f="ngForm">
                 <fieldset class="col-12 m-auto">
                     <label class="col-9 mx-auto" for="username">Imię/Pseudonim*</label>
-                    <input  class="col-10 mx-auto" type="text" id="username" placeholder="Twoje imię" ngModel name="username" required>
+                    <input class="col-10 mx-auto" type="text" id="username" placeholder="Twoje imię" ngModel name="username" required #username="ngModel">
+                    <span class="mx-auto" *ngIf="!username.valid && username.touched">To pole jest obowiązkowe!</span>
                     <label class="col-9 mx-auto" for="email">E-mail*</label>
-                    <input class="col-10 mx-auto" type="email" id="email" placeholder="Twój email" ngModel name="email" required email>
-                    <span class="mx-auto">Podaj prawidłowy adres email!</span>
+                    <input class="col-10 mx-auto" type="email" id="email" placeholder="Twój email" ngModel name="email" required email #email="ngModel">
+                    <span class="mx-auto" *ngIf="!email.valid && email.touched">Podaj prawidłowy adres email!</span>
                     <label class="col-9 mx-auto" for="contact">Preferowana forma kontaktu*</label>
-                    <select class="col-10 mx-auto" ngModel name="type" required>
+                    <select class="col-10 mx-auto" [ngModel]="'personal'" name="type" required #type="ngModel">
                         <option value="personal" selected>Osobista</option>
                         <option value="skype">Skype</option>
                         <option value="email">E-mail</option>
                     </select>
-                    <span class="mx-auto">Wszystkie pola oznaczone gwiazdką są obowiązkowe</span>
+                    <span class="mx-auto" *ngIf="!email.valid && email.touched || !username.valid && username.touched || !type.valid && type.touched">Wszystkie pola oznaczone gwiazdką są obowiązkowe!</span>
                 </fieldset>
                 <button class="mx-auto submit-button" type="submit" [disabled]="!f.valid">WYŚLIJ</button>
             </form>

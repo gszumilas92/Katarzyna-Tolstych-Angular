@@ -23,7 +23,7 @@
 
 /* Containers */
 .arrow-container {
-    padding-top: 10vh;
+    padding-top: 2vh;
     z-index: 4;
     display: flex;
     justify-content: space-between;
