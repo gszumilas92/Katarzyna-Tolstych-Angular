@@ -26,9 +26,9 @@ export class OfferComponent implements OnInit {
 
   ngOnInit() {
     this.timeoutID = setTimeout(() => {
+      document.getElementById('offer').scrollIntoView({behavior: "smooth", block:"start"})
       this.state = 'visible'
     }, 100);
-    document.getElementById('offer').scrollIntoView()
   }
 
 }

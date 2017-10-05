@@ -1,32 +1,35 @@
-<div [@componentState]="state" class="container-fluid" id="aboutMe">
-    <div class="row center-columns">
-        <h2>O mnie</h2>
-    </div>
+<div [@componentState]="state" class="container-fluid" id="about">
     <div class="row">
-        <div class="col-8 ml-auto">
+        <div class="col-12 mx-auto">
             <div class="row">
-                <div class="col-9 ml-auto">
-                    <p class="sub-heading center-text">Pasjonatka zawodu – żyjąca w myśl:<br>„Rób, co kochasz – kochaj to, co robisz”!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 m-auto">
-                    <p class="main-paragraph"><span>Absolwentka psychologii klinicznej Uniwersytetu Opolskiego.</span> Od ukończenia studiów ciągle
-                        podnosząca swoją wiedze i kwalifikacje.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 m-auto">
-                    <p class="main-paragraph"><span>Terapeutka Racjonalnej Terapii Zachowania</span> - terapii umożliwiającej skuteczną interwencję
-                        terapeutyczną poprzez zmianę i usprawnienie przekonań, jakie wykorzystuje dana osoba.</p>
-                </div>
+                <h2 class="mx-auto">O mnie</h2>
             </div>
         </div>
-        <div class="col-2 mr-auto center-columns">
+        <div class="col-12 mx-auto photo-container">
             <img src="../../assets/kasia.jpg" alt="Katarzyna Tolstych" class="author_photo">
         </div>
+        <div class="col-12 mx-auto">
+            <p class="sub-heading center-text">Pasjonatka zawodu – żyjąca w myśl:<br>„Rób, co kochasz – kochaj to, co robisz”!</p>
+        </div>
     </div>
     <div class="row">
+        <div class="col-10 mx-auto">
+            <div class="row ">
+                <div class="col-xl-10 col-lg-9 col-md-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="main-paragraph"><span>Absolwentka psychologii klinicznej Uniwersytetu Opolskiego.</span> Od ukończenia studiów
+                                ciągle podnosząca swoją wiedze i kwalifikacje.</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="main-paragraph"><span>Terapeutka Racjonalnej Terapii Zachowania</span> - terapii umożliwiającej skuteczną interwencję
+                                terapeutyczną poprzez zmianę i usprawnienie przekonań, jakie wykorzystuje dana osoba.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 photo-container"><img src="../../assets/kasia.jpg" alt="Katarzyna Tolstych" class="author_photo"></div>
+            </div>
+        </div>
         <div class="col-10 mx-auto">
             <p class="main-paragraph">
                 <span>Terapeutka I i II stopnia terapii Eye Movement Desensitization and Reprocessing (EMDR).</span> Terapia
@@ -45,45 +48,50 @@
         </div>
         <div class="col-10 mx-auto">
             <div class="row">
-                <div class="col-6 mx-auto">
+                <div class="col-lg-6 col-md-12 mx-auto">
                     <p class="main-paragraph">
                         - w strukturach Służby Więziennej/ Okręgowego Inspektoratu Służby Więziennej w Opolu oceniając stan psychiczny funkcjonariusza
                         SW - orzekając o jego przydatności do dalszej służby; udzielając wsparcia i pomocy psychologicznej
                         po zdarzeniach trudnych/traumatycznych; propagując profilaktykę prozdrowotną,
                     </p>
                 </div>
-                <div class="col-6 mx-auto">
+                <div class="col-lg-6 col-md-12 mx-auto">
                     <p class="main-paragraph">
                         - w Punkcie Konsultacji psychologicznej „Xsaverianum” w charakterze czynnego poradnictwa m.in. z zakresu predyspozycji zawodowych;
                         interwencji w sytuacjach kryzysowych/trudnych; profilaktyki i promocji zdrowia psychicznego, a także
                         indywidualnych porad psychologicznych oraz warsztatów i wykładów tematycznych.
                     </p>
                 </div>
-            </div>
-        </div>
-        <div class="col-10 mx-auto">
-            <div class="row">
-                <div class="col-6 mx-auto">
-                    <p class="main-paragraph">
-                        - współpraca z działami HR opolskich Agencji Pracy.
-                    </p>
-                </div>
-                <div class="col-6 mx-auto">
+                <div class="col-lg-6 col-md-12 mx-auto">
                     <p class="main-paragraph">
                         - współpraca w charakterze trenera i szkoleniowca z ogólnopolskimi firmami szkoleniowymi m.in. „Galicyjskim Centrum Edukacji”
                         z Krakowa oraz „Center Consulting” z Olsztyna.
                     </p>
                 </div>
+                <div class="col-lg-6 col-md-12 mx-auto">
+                    <p class="main-paragraph">
+                        - współpraca z działami HR opolskich Agencji Pracy.
+                    </p>
+                </div>
+                <div class="col-12 mx-auto">
+                    <p class="main-paragraph">
+                        Prywatnie - miłośniczka zwierząt, tańców latynoamerykańskich, sportów ekstremalnych i podróży.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="col-10 mx-auto">
-            <p class="main-paragraph">
-                Prywatnie - miłośniczka zwierząt, tańców latynoamerykańskich, sportów ekstremalnych i podróży.
-            </p>
-        </div>
-        <div class="col-9 certificates mx-auto">
+        <!-- <div class="certificates col-10 mx-auto">
             <div class="row">
-                <img *ngFor="let diplom of diplomes" (click)="openModal(diplom.src)" class="col" src={{diplom.src}} alt={{diplom.alt}}>
+                <img class="col-xl-3 col-md-6 col-sm-12 mx-auto border" *ngFor="let diplom of diplomes" (click)="openModal(diplom.src)" src={{diplom.src}}
+                    alt={{diplom.alt}}>
+            </div>
+        </div> -->
+        <div class="col-10 mx-auto">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 mx-auto certificates flex-center" *ngFor="let diplom of diplomes">
+                    <img class=" border" (click)="openModal(diplom.src)" src={{diplom.src}}
+                        alt={{diplom.alt}}>
+                </div>
             </div>
         </div>
     </div>

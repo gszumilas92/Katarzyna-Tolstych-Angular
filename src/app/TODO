@@ -6,8 +6,7 @@ strefamyśli.pl design
 8. Edit font-weight of h2 + font-weight of navbar + font-weight of h4
 
 //TODO NOW
-26. Formularz Kontaktowy
-27. Napisać animację scrolla na podstawie https://gist.github.com/andjosh/6764939
+28. RWD
 
 //Done + TODO by Client
 2. Menu Specjalizujemy się w (icony) // Question : Do czego mają nawigować icony?
@@ -35,6 +34,8 @@ strefamyśli.pl design
 20. Dopasować kolorystycznie header i footer.
 22. Animate nice arrows
 23. Slide to component after clicking navigation
+26. Formularz Kontaktowy
+27. Animacja scrolla
 
 //Undone Sections
 

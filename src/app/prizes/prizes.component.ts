@@ -26,9 +26,9 @@ export class PrizesComponent implements OnInit {
 
   ngOnInit() {
     this.timeoutID = setTimeout(() => {
+      document.getElementById('prizes').scrollIntoView({behavior: "smooth", block:"start"})
       this.state = 'visible'
     }, 100);
-    document.getElementById('prizes').scrollIntoView()
   }
 
 }

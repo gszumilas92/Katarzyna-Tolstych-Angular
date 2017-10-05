@@ -29,11 +29,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.timeoutID = setTimeout(() => {
+      document.getElementById('home').scrollIntoView({behavior: "smooth", block:"start"})
       this.state = 'visible'
     }, 100);
-
-    document.getElementById('home').scrollIntoView()
-
   }
 
 }

@@ -31,9 +31,9 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.timeoutID = setTimeout(() => {
+      document.getElementById('contact').scrollIntoView({behavior: "smooth", block:"start"})
       this.state = 'visible'
     }, 100);
-    document.getElementById('contact').scrollIntoView()
   }
 
 }

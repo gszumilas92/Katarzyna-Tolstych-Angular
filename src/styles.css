@@ -41,11 +41,11 @@ ul {
     padding: 0;
 }
 
-
 p {
     font-size: 26px;
     color: #000;
     font-weight: 400;
+    margin: 2vw;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -63,9 +63,9 @@ h1 {
 h2 {
     position: relative;
     font-size: 54px;
-    margin-bottom: 70px;
+    margin-bottom: 5vw;
     font-weight: 400;
-    padding-top: 10vh;
+    padding-top: 8vw;
 }
 
 h2::after {
@@ -84,8 +84,8 @@ h4 {
 }
 
 .sub-heading {
-    font-size: 34px;
-    margin: 0 0 5vh 0;
+    font-size: 30px;
+    margin: 0 0 5vw 0;
 }
 
 /*Useless Classes - Delete after production*/
@@ -113,17 +113,18 @@ h4 {
 
 
 /*Some additional grid options*/
-.center-columns {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 .center-rows {
     margin-left: auto;
 }
 .center-text {
     text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*From Bootstrap-4-Beta*/

@@ -35,14 +35,26 @@ export class NavArrowComponent implements OnInit {
   timeoutID
 
   ngOnInit() {}
+
+  getCurrentID() {
+    return this.components.indexOf(this.route.snapshot.firstChild.url[0].path)
+  }
   
   nextComponent() {
+    let nextComponent
+    this.getCurrentID()
     this.rightState = 'active'
-    this.currentID = this.components.indexOf(this.route.snapshot.firstChild.url[0].path)+1
-    this.currentID===this.components.length ? this.router.navigate([this.components[0]]) : this.router.navigate([this.components[this.currentID]]);
+    this.getCurrentID() === this.components.length-1 ? nextComponent = this.components[0] : nextComponent = this.components[this.getCurrentID()+1]
+    this.router.navigate([nextComponent])
+
+    // this.currentID = this.components.indexOf(this.route.snapshot.firstChild.url[0].path)+1
+    // this.currentID===this.components.length ? this.router.navigate([this.components[0]]) : this.router.navigate([this.components[this.currentID]]);
     this.timeoutID = setTimeout(() => {
       this.rightState = 'inactive'
     }, 200);
+    this.timeoutID = setTimeout(() => {
+      document.getElementById(nextComponent).scrollIntoView()
+    }, 0)
   }
 
   previousComponent() {   

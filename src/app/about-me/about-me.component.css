@@ -1,16 +1,61 @@
-.author_photo {
-    max-width: 95%;
-    max-height: 95%;
-}
-
 .certificates {
     margin-top: 4%;
     margin-bottom: 4%;
+    /* display: flex */
 }
 
 .certificates img {
-    max-width: 350px;
-    max-height: 350px;
+    height: 300px;
+    width: 200px;
     cursor: pointer;
-    margin: 20px 0;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-12.photo-container {
+    display:none;
+}
+
+.author_photo {
+    max-width: 200px;
+    max-height: 266px;
+}
+
+@media (max-width: 992px) {
+    .author_photo {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .author_photo {
+        max-width: 120px;
+    }
+
+    .photo-container {
+        margin-bottom: 2vh;
+    }
+
+    .col-xl-2.photo-container {
+        display: none;
+    }
+    
+    .col-12.photo-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) { 
+    h2 {
+        padding-top: 5vh;
+        margin-bottom: 3vh;
+    }
+}
+
+@media (max-width: 480px) { 
+
 }

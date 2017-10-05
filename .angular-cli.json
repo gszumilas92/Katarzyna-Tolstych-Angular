@@ -21,7 +21,8 @@
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css",
         "../node_modules/normalize.css/normalize.css",
-        "styles.css"
+        "styles.css",
+        "queries.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
