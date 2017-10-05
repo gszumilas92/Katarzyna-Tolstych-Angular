@@ -68,16 +68,20 @@ a::after {
 
 @media (max-width: 1200px) {
     a { font-size: 23px; }
+    a::after { width: 2.5vw; }
 }
 
 @media (max-width: 992px) { 
     a { font-size: 21px; }    
+    a::after { width: 3vw; }
 }
 
 @media (max-width: 767px) {
     a { font-size: 20px; }        
+    a::after { width: 3.5vw; }
 }
 
 @media (max-width: 576px) { 
-    a { font-size: 19px; }        
+    a { font-size: 19px; }       
+    a::after { width: 4vw; }
 }

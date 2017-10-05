@@ -41,5 +41,6 @@
 
 @media (max-width: 576px) { 
     .cyte { font-size: 14px; }
-    .author { font-size: 24px; }  
+    .author { font-size: 24px; }
+    .sub-header { margin-left: 5vw; margin-right:5vw;}
 }
