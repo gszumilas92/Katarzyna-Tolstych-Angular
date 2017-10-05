@@ -15,12 +15,28 @@ li {
     text-align: left;
 }
 
-ul {
-    margin-top: 20px;
-}
-
-.col-3, ul {
+.col-6, .col-3, .col-lg-3, ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+ @media (max-width: 1200px) {
+    li {
+        line-height: 30px;
+        font-size: 19px;
+    }
+}
+
+/* @media (max-width: 992px) { 
+    li {
+        line-height: 30px;
+        font-size: 18px;
+    }
+}  */
+
+@media (min-width: 992px) {
+    .order-1,.order-2,.order-3,.order-4 {
+        order: 0;
+    }
 }

@@ -86,11 +86,13 @@
                     alt={{diplom.alt}}>
             </div>
         </div> -->
-        <div class="col-10 mx-auto">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 mx-auto certificates flex-center" *ngFor="let diplom of diplomes">
-                    <img class=" border" (click)="openModal(diplom.src)" src={{diplom.src}}
-                        alt={{diplom.alt}}>
+        <div class="container">
+            <div class="col-11 mx-auto">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto certificates flex-center" *ngFor="let diplom of diplomes">
+                        <img class=" border" (click)="openModal(diplom.src)" src={{diplom.src}}
+                            alt={{diplom.alt}}>
+                    </div>
                 </div>
             </div>
         </div>

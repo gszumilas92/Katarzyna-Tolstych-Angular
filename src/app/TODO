@@ -15,6 +15,7 @@ strefamyśli.pl design
 21. Pokazać zaznaczone sekcje w navigacji. // Question : class a:hover::after ?
 24. Choose another ArrowNavigation?
 25. Czy bordery w kontakcie i cenniku mają być tej samej wielkości?
+28. Omówić RWD Header col-sm-12
 
 //Done Tasks
 1. Fix Grid for prizes + reduce size of prizes

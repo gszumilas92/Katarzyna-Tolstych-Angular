@@ -65,3 +65,19 @@ a::after {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
+
+@media (max-width: 1200px) {
+    a { font-size: 23px; }
+}
+
+@media (max-width: 992px) { 
+    a { font-size: 21px; }    
+}
+
+@media (max-width: 767px) {
+    a { font-size: 20px; }        
+}
+
+@media (max-width: 576px) { 
+    a { font-size: 19px; }        
+}
