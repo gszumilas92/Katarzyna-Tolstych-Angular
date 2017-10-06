@@ -25,6 +25,19 @@
     max-height: 266px;
 }
 
+.sub-heading {
+    font-size: 30px;
+}
+
+.sub-heading span {
+    font-style: italic;
+}
+
+.sub-heading .bold {
+    font-style: normal;
+    font-weight: 600;
+}
+
 @media (max-width: 992px) {
     .author_photo {
         max-width: 150px;

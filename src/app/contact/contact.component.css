@@ -2,7 +2,7 @@ form {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    /* margin-top: 5vh; */
+    margin-top: 4vh;
 }
 
 form, input, select {
@@ -89,4 +89,8 @@ input, select, button {
 
 input:focus, select:focus {
     border-color: rgba(11, 100, 11, 1);
+}
+
+.center-text {
+    margin: 0;
 }
