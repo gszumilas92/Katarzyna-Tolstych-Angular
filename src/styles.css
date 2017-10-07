@@ -6,22 +6,22 @@ body {
     background-color: #FAFAFA
 }
 
-body::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
+    body::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
 
-body::-webkit-scrollbar
-{
-	width: 3px;
-	background-color: #F5F5F5;
-}
+    body::-webkit-scrollbar
+    {
+        width: 3px;
+        background-color: #F5F5F5;
+    }
 
-body::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
-}
+    body::-webkit-scrollbar-thumb
+    {
+        background-color: #000000;
+    }
 
 a {
     text-decoration: none;
@@ -63,9 +63,10 @@ h1 {
 h2 {
     position: relative;
     font-size: 54px;
-    margin-bottom: 5vw;
+    margin-bottom: 5vh;
+    margin-top: -5vh;
     font-weight: 400;
-    padding-top: 8vw;
+    /* padding-top: 4vh; */
 }
 
 h2::after {
@@ -82,11 +83,6 @@ h4 {
     font-size: 28px;
     font-weight: 400;
     margin: 24px 0;
-}
-
-.sub-heading {
-    font-size: 30px;
-    margin: 0 0 5vw 0;
 }
 
 /*Useless Classes - Delete after production*/

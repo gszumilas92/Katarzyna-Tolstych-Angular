@@ -34,12 +34,11 @@ a::after {
     -moz-transform: translate(-50%,0);
     -webkit-transform: translate(-50%,0);
 }    
-/* Question : class a:hover::after ? */
-/*
+ 
 a:hover::after {
     width: 100%;
 }    
- */ 
+
  
 a:hover::after,
 a::after {
