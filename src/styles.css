@@ -92,9 +92,7 @@ h4 {
 
 
 /*Optional Classes*/
-.tables {
-    width: 35vw;
-}
+.tables { width: 600px; }
 
 .main-paragraph span {
     text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;

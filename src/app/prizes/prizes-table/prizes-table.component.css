@@ -37,8 +37,41 @@ tfoot th {
     border-radius: 20px 20px 0 0;
 }
 
-
 td:first-child, td:last-child {
     text-align: left;
     padding-left: 1vw;
+}
+
+@media (max-width: 1200px) {
+    table { font-size: 19px; }
+    th, td { padding: 10px 0;}
+}
+
+@media (max-width: 1100px) { 
+    table { font-size: 18px; }
+    th, td { padding: 9px 0;}
+}
+
+@media (max-width: 1000px) {
+    table { font-size: 17px; }
+    th, td { padding: 8px 0;}
+}
+
+@media (max-width: 900px) { 
+    table { font-size: 16px; min-width: 460px;}
+    th, td { padding: 7px 0;}
+}
+
+@media (max-width: 600px) { 
+    table { font-size: 15px; min-width: 400px;}
+    th, td { padding: 5px 0;}
+}
+
+@media (max-width: 500px) { 
+    table { font-size: 16px; min-width: 350px;}
+    th, td { padding: 3px 0;}
+}
+
+@media (max-width: 430px) { 
+    table { min-width: 300px;}
 }

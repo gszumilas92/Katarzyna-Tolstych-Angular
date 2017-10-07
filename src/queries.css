@@ -1,6 +1,7 @@
 @media (max-width: 1200px) {
     p { font-size: 25px; }
     .sub-heading { font-size: 28px }
+    .tables { width: 50vw; }
     h1 { font-size: 50px; }
     h2 { font-size: 50px; }
     h4 { font-size: 27px;}
@@ -9,6 +10,7 @@
 @media (max-width: 992px) { 
     p { font-size : 22px;}
     .sub-heading { font-size: 26px; }
+    .tables { width: 52vw; }
     h1 { font-size: 46px; }
     h2 { font-size: 46px; }
     h4 { font-size: 26px;}
@@ -17,6 +19,7 @@
 @media (max-width: 767px) {
     p { font-size : 20px; }
     .sub-heading { font-size: 24px; }
+    .tables { width: 54vw; }
     h1 { font-size: 42px; }   
     h2 { font-size: 44px; }
     h4 { font-size: 24px;}
@@ -25,6 +28,7 @@
 @media (max-width: 576px) { 
     p { font-size : 18px; }
     .sub-heading { font-size: 22px; }
+    .tables { width: 56vw; }
     h1 { font-size: 38px; }   
     h2 { font-size: 40px; }
     h4 { font-size: 23px;}
