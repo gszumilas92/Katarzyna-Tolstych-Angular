@@ -81,7 +81,6 @@ h2::after {
 h4 {
     font-size: 28px;
     font-weight: 400;
-    text-align: center;
     margin: 24px 0;
 }
 
@@ -128,6 +127,7 @@ h4 {
     justify-content: center;
     align-items: center;
 }
+
 
 /*From Bootstrap-4-Beta*/
 .m-auto {
