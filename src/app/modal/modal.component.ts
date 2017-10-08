@@ -9,7 +9,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   animations: [
     trigger('modalState', [
       state('visible', style({
-        display: 'block'
+        display: 'flex'
       })),
       state('hidden', style({
         display:'none'

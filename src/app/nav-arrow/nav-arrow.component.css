@@ -5,6 +5,7 @@
     height: 3vw;
     cursor: pointer;
     display: flex;
+    margin-top: 5vh;
 }
 
 .arrow-right {
@@ -23,15 +24,16 @@
 
 /* Containers */
 .arrow-container {
-    padding-top: 6vh;
     z-index: 4;
     display: flex;
     justify-content: space-between;
+    height:0;
 }
 
 .flexbox-wrapper {
     position: sticky;
     top: 50%;
-    z-index: 444;    
+    z-index: 444;
+    height: 0;
 }
 

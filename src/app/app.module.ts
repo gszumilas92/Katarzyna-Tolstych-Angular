@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './header/navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavArrowComponent } from './nav-arrow/nav-arrow.component';
 import { ModalComponent } from './modal/modal.component';
 import { ModalService } from './modal/modal.service';
 
@@ -19,7 +18,6 @@ import { ModalService } from './modal/modal.service';
     AppComponent,
     HeaderComponent,
     NavigationComponent,
-    NavArrowComponent,
     FooterComponent,
     ModalComponent
   ],

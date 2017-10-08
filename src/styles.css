@@ -6,22 +6,19 @@ body {
     background-color: #FAFAFA
 }
 
-    body::-webkit-scrollbar-track
-    {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        background-color: #F5F5F5;
-    }
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
 
-    body::-webkit-scrollbar
-    {
-        width: 3px;
-        background-color: #F5F5F5;
-    }
+body::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+}
 
-    body::-webkit-scrollbar-thumb
-    {
-        background-color: #000000;
-    }
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
 
 a {
     text-decoration: none;
@@ -31,10 +28,6 @@ app-header, app-navigation {
     color: #fff;
 }
 
-p {
-    font-family: Helvetica, Arial;
-}
-
 ul {
     list-style: none;
     margin: 0;
@@ -42,7 +35,8 @@ ul {
 }
 
 p {
-    font-size: 26px;
+    font-family: Helvetica, Arial;
+    font-size: 25px;
     color: #000;
     font-weight: 400;
     margin: 2vw;
@@ -62,11 +56,9 @@ h1 {
 
 h2 {
     position: relative;
-    font-size: 54px;
-    margin-bottom: 5vh;
-    margin-top: -5vh;
+    font-size: 50px;
+    margin: 5vh 0;
     font-weight: 400;
-    /* padding-top: 4vh; */
 }
 
 h2::after {
@@ -87,16 +79,31 @@ h4 {
 
 /*Useless Classes - Delete after production*/
 .border {
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
 }
 
 
-/*Optional Classes*/
-.tables { width: 600px; }
+/*Special Classes*/
+.tables { width: 600px; transition-property: 'width'; transition-duration: 0.5s; }
 
 .main-paragraph span {
     text-shadow: 0px 0 black, 0 0px black, 0px 0 black, 0 0px black;
 }
+
+.sub-heading {
+    margin: 0 0 4vh 0;
+    font-size: 27px;
+}
+
+.sub-heading span {
+    font-style: italic;
+}
+
+.sub-heading .bold {
+    font-style: normal;
+    font-weight: 600;
+}
+
 /*Index layers*/
 .index-99 { z-index: 99; }
 .index-98 { z-index: 98; }

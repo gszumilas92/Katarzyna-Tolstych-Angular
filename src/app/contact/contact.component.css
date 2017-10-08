@@ -14,13 +14,17 @@ form, input, select, label, span {
     font-size: 105%;
 }
 
+input::content {
+    margin-left: 20px;
+}
+
 option {
     font-size: 115%;
 }
 
 input, select, label, span {
     border-radius: 1.5vw;
-    padding: 2%;
+    padding: 2% 2% 2% 4%;
     outline: none;
 }
 
@@ -41,8 +45,8 @@ label {
 .submit-button {
     margin: 0 0 5% 0;
     padding: 3% 13%;
+    letter-spacing: 1px;
     background-color: rgba(11, 150, 11, 0.6);
-    letter-spacing: -0.2px;
     display:flex;
     justify-content: center;
     width: 30%;
@@ -78,7 +82,7 @@ input.ng-invalid.ng-touched, select.ng-invalid.ng-touched {
     border-color: rgba(255, 0, 0, 0.45);
 }
 
-input, select, button {
+input, select, button, span {
     transition: 0.6s;
 }
 
@@ -88,4 +92,31 @@ input:focus, select:focus {
 
 .center-text {
     margin: 0;
+}
+
+@media (max-width: 1200px) {
+    form, input, select, label, span { font-size: 100%; }
+    option { font-size: 110%; }
+    span { font-size: 78%; }
+    .submit-button { font-size: 100%; }
+}
+
+@media (max-width: 992px) { 
+    form, input, select, label, span { font-size: 95%; }
+    span { font-size: 76%; }
+    .submit-button { font-size: 90%; width: 31%;}    
+    input, select, label, span { padding: 2.5%  2.5%  2.5% 4%; }
+}
+
+@media (max-width: 767px) {
+    form, input, select, label, span { font-size: 90%; }
+    span { font-size: 72%; }
+    .submit-button { font-size: 85%; width: 32%; padding: 4% 13%}  
+    input, select, label, span { padding: 3%  3%  3% 4%; }
+}
+
+@media (max-width: 576px) { 
+    form, input, select, label, span { font-size: 85%; }
+    span { font-size: 70%; }
+    .submit-button { font-size: 80%; width: 33%; padding: 5% 13%}        
 }

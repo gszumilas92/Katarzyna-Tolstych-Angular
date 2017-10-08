@@ -6,28 +6,20 @@ strefamyśli.pl design
 8. Edit font-weight of h2 + font-weight of navbar + font-weight of h4
 
 //TODO NOW
+28. RWD : modal (quit option, when goes mobile // Redesign!!!!), RWD : footer!!!
 29. Mapka dojazdu w postaci modala + icona w footerze
-28. RWD
-25. Czy bordery w kontakcie i cenniku mają być tej samej wielkości? => Tak
-30. Wszystki pola zaznaczone w kontakcie tylko kiedy pola są puste
-31. ostylowanie przycisku wyslij
-32. strzalki potrzebuja padding-bottom przy mniejszych rozdzielczosciach
-33. .sub-heading @media zmniejszac font
-
+30. Wszystkie pola zaznaczone w kontakcie tylko kiedy pola są puste
 
 //Done + TODO by Client
-2. Menu Specjalizujemy się w (icony) // Question : Do czego mają nawigować icony? // pozniej    
-5. Przydatne linki w footerze // Question : Jakie mają się znajdować linki? // done
-9. Omówić overflow-y na body. // Question : Czy pasek przewijania ma być ostylowany? Nie dotyczy wszystkich przegladrek! (np. Firefox) //webkit //done
-21. Pokazać zaznaczone sekcje w navigacji. // Question : class a:hover::after ? // done
-24. Choose another ArrowNavigation? //done
-28. Omówić RWD Header col-sm-12
+2. Menu Specjalizujemy się w (icony) // Question : Do czego mają nawigować icony? // W fazie rozwoju projektu   
 
 //Done Tasks
 1. Fix Grid for prizes + reduce size of prizes
 3. Strzalki zmieniajace podstrony
+5. Przydatne linki w footerze // Question : Jakie mają się znajdować linki? // done
 6. O mnie : Dorzucić span main paragraph
 7. Dyplom powieksza sie po kliknieciu
+9. Omówić overflow-y na body. // Question : Czy pasek przewijania ma być ostylowany? Nie dotyczy wszystkich przegladrek! (np. Firefox) //webkit //done
 10. Cennik i Kontakt tej samej wielkości! // class .tables
 11. Center Footer Text!!!
 12. Split Label from inputs
@@ -39,10 +31,17 @@ strefamyśli.pl design
 18. Animacja zmiany strony strzałkami
 19. Przesunięcie obrazka w headerze
 20. Dopasować kolorystycznie header i footer.
+21. Pokazać zaznaczone sekcje w navigacji. // Question : class a:hover::after ? // done
 22. Animate nice arrows
 23. Slide to component after clicking navigation
+24. Choose another ArrowNavigation? //done
+25. Czy bordery w kontakcie i cenniku mają być tej samej wielkości? => Tak
 26. Formularz Kontaktowy
 27. Animacja scrolla
+28. Omówić RWD Header col-sm-12 //done
+31. ostylowanie przycisku wyslij
+32. strzalki potrzebuja padding-bottom przy mniejszych rozdzielczosciach
+33. .sub-heading @media zmniejszac font
 
 //Undone Sections
 

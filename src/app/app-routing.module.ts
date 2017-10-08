@@ -9,6 +9,7 @@ import { OfferComponent } from './offer/offer.component';
 import { PrizesComponent } from './prizes/prizes.component';
 import { PrizesTableComponent } from './prizes/prizes-table/prizes-table.component';
 import { ContactComponent } from './contact/contact.component';
+import { NavArrowComponent } from './nav-arrow/nav-arrow.component';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
         OfferComponent,
         ContactComponent,
         PrizesComponent,
-        PrizesTableComponent
+        PrizesTableComponent,
+        NavArrowComponent
     ],
     imports: [
         FormsModule,

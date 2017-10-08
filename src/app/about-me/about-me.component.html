@@ -1,4 +1,5 @@
 <div [@componentState]="state" class="container-fluid" id="about">
+    <app-nav-arrow></app-nav-arrow>
     <div class="row">
         <div class="col-12 mx-auto">
             <div class="row">
@@ -8,7 +9,7 @@
         <div class="col-12 mx-auto photo-container">
             <img src="../../assets/kasia.jpg" alt="Katarzyna Tolstych" class="author_photo">
         </div>
-        <div class="col-12 mx-auto">
+        <div class="col-10 mx-auto">
             <p class="sub-heading center-text"><span class="bold">Pasjonatka zawodu</span> – żyjąca w myśl:<br><span>„Rób, co kochasz – kochaj to, co robisz”!</span></p>
         </div>
     </div>
@@ -80,17 +81,11 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="certificates col-10 mx-auto">
-            <div class="row">
-                <img class="col-xl-3 col-md-6 col-sm-12 mx-auto border" *ngFor="let diplom of diplomes" (click)="openModal(diplom.src)" src={{diplom.src}}
-                    alt={{diplom.alt}}>
-            </div>
-        </div> -->
         <div class="container">
             <div class="col-11 mx-auto">
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto certificates flex-center" *ngFor="let diplom of diplomes">
-                        <img class=" border" (click)="openModal(diplom.src)" src={{diplom.src}}
+                        <img (click)="openModal(diplom.src)" src={{diplom.src}}
                             alt={{diplom.alt}}>
                     </div>
                 </div>

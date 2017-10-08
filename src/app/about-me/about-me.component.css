@@ -1,7 +1,6 @@
 .certificates {
     margin-top: 4%;
     margin-bottom: 4%;
-    /* display: flex */
 }
 
 .certificates img {
@@ -23,19 +22,6 @@
 .author_photo {
     max-width: 200px;
     max-height: 266px;
-}
-
-.sub-heading {
-    font-size: 30px;
-}
-
-.sub-heading span {
-    font-style: italic;
-}
-
-.sub-heading .bold {
-    font-style: normal;
-    font-weight: 600;
 }
 
 @media (max-width: 992px) {
@@ -60,15 +46,4 @@
     .col-12.photo-container {
         display: flex;
     }
-}
-
-@media (max-width: 576px) { 
-    h2 {
-        padding-top: 5vh;
-        margin-bottom: 3vh;
-    }
-}
-
-@media (max-width: 480px) { 
-    
 }

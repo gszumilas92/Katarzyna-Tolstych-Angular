@@ -29,7 +29,8 @@ export class NavArrowComponent implements OnInit {
   ) { }
 
   currentID
-  components = ['home','about','offer','prizes','contact'];
+  // components = ['home','about','offer','prizes','contact'];
+  components = ['home','about','offer','prizes','contact']
   rightState = 'inactive'
   leftState = 'inactive'
   timeoutID
@@ -37,33 +38,36 @@ export class NavArrowComponent implements OnInit {
   ngOnInit() {}
 
   getCurrentID() {
-    return this.components.indexOf(this.route.snapshot.firstChild.url[0].path)
+    // return this.components.indexOf(this.route.snapshot.firstChild.url[0].path) It was working, when nav-arrow was in main component
+    return this.components.indexOf(this.route.snapshot.url[0].path); //This one works inside the components    
   }
   
   nextComponent() {
     let nextComponent
-    this.getCurrentID()
     this.rightState = 'active'
     this.getCurrentID() === this.components.length-1 ? nextComponent = this.components[0] : nextComponent = this.components[this.getCurrentID()+1]
     this.router.navigate([nextComponent])
-
-    // this.currentID = this.components.indexOf(this.route.snapshot.firstChild.url[0].path)+1
-    // this.currentID===this.components.length ? this.router.navigate([this.components[0]]) : this.router.navigate([this.components[this.currentID]]);
     this.timeoutID = setTimeout(() => {
       this.rightState = 'inactive'
     }, 200);
+    this.scrollToComponent(nextComponent)
+  }
+
+  scrollToComponent(component) {
     this.timeoutID = setTimeout(() => {
-      document.getElementById(nextComponent).scrollIntoView()
+      document.getElementById(component).scrollIntoView()
     }, 0)
   }
 
   previousComponent() {   
+    let previousComponent
     this.leftState = 'active'    
-    this.currentID = this.components.indexOf(this.route.snapshot.firstChild.url[0].path)-1
-    this.currentID < 0 ? this.router.navigate([this.components[this.components.length-1]]) : this.router.navigate([this.components[this.currentID]]);
+    this.getCurrentID() === 0 ? previousComponent = this.components[this.components.length-1] : previousComponent = this.components[this.getCurrentID()-1]
+    this.router.navigate([previousComponent])
     this.timeoutID = setTimeout(() => {
       this.leftState = 'inactive'
     }, 200);
+    this.scrollToComponent(previousComponent)
   }
 
 }
