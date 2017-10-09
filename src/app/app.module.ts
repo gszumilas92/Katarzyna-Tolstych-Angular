@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ModalComponent } from './modal/modal.component';
 import { ModalService } from './modal/modal.service';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,10 @@ import { ModalService } from './modal/modal.service';
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCXROKKnPzvjFDOOoB83aylNFukWIjlI2Q'
+    })
   ],
   providers: [ModalService],
   bootstrap: [AppComponent]

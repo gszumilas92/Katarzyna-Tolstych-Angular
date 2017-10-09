@@ -6,7 +6,6 @@ strefamyśli.pl design
 8. Edit font-weight of h2 + font-weight of navbar + font-weight of h4
 
 //TODO NOW
-28. RWD : modal (quit option, when goes mobile // Redesign!!!!)
 29. Mapka dojazdu w postaci modala + icona w footerze
 
 //Done + TODO by Client
@@ -38,6 +37,7 @@ strefamyśli.pl design
 26. Formularz Kontaktowy
 27. Animacja scrolla
 28. Omówić RWD Header col-sm-12 //done
+29. RWD : modal (quit option, when goes mobile // Redesign!!!!)
 30. .sub-heading @media zmniejszac font
 31. ostylowanie przycisku wyslij
 32. strzalki potrzebuja padding-bottom przy mniejszych rozdzielczosciach

@@ -1,6 +1,14 @@
-<div [@modalState]="state" (click)="closeModal()" class="modal">
+<!-- <div [@modalState]="state" (click)="closeModal()" class="modal">
   <div [@imageState]="state" class="close-button" (click)="closeModal()"></div>
 </div>
     <div class="image-container" [@modalState]="state">
       <img [@imageState]="state" src={{src}} alt="doradca personalny">
-    </div>
+    </div> -->
+
+<div [@modalState]="state" class="modal-container">
+  <div class="modal-background" (click)="closeModal()"></div>
+  <div class="content-container">
+      <img [@imageState]="state" src={{src}} alt={{alt}}>
+      <div [@imageState]="state" class="close-button" (click)="closeModal()"></div>
+  </div>
+</div>

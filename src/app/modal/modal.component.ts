@@ -9,7 +9,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   animations: [
     trigger('modalState', [
       state('visible', style({
-        display: 'flex'
+        display: 'block'
       })),
       state('hidden', style({
         display:'none'
@@ -38,6 +38,7 @@ export class ModalComponent implements OnInit {
   display
   state = 'hidden'
   src
+  alt
 
   closeModal() {
     this.state = 'hidden';
@@ -48,6 +49,7 @@ export class ModalComponent implements OnInit {
       (data) => {
         this.state = data['state'];
         this.src = data['src'];
+        this.alt = data['alt'];
       }
     )
   }
