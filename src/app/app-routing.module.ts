@@ -18,7 +18,7 @@ const appRoutes: Routes = [
     { path: 'prizes', component: PrizesComponent },
     { path: 'contact', component: ContactComponent },
     { path: '',
-      redirectTo: '/home',
+      redirectTo: 'home',
       pathMatch: 'full'
     }
 ];
