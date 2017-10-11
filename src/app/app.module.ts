@@ -27,10 +27,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCXROKKnPzvjFDOOoB83aylNFukWIjlI2Q'
-    })
+    BrowserAnimationsModule
   ],
   providers: [ModalService],
   bootstrap: [AppComponent]
