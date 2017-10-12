@@ -24,7 +24,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
           //Beginning style for image
           transform: 'scale(0.2)'
         }),
-        animate(700)
+        animate(300)
       ])
     ])
     
