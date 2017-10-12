@@ -16,11 +16,7 @@ const appRoutes: Routes = [
     { path: 'about', component: AboutMeComponent },
     { path: 'offer', component: OfferComponent },
     { path: 'prizes', component: PrizesComponent },
-    { path: 'contact', component: ContactComponent },
-    { path: '',
-      redirectTo: 'home',
-      pathMatch: 'full'
-    }
+    { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

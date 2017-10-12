@@ -1,6 +1,6 @@
 .certificates {
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .certificates img {
@@ -46,4 +46,9 @@
     .col-12.photo-container {
         display: flex;
     }
+}
+
+@media ( max-width: 380px ) {
+    .author_photo { max-width: 100px; }
+    .certificates {height: 270px; width: 190px;}
 }

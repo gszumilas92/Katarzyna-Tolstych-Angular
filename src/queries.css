@@ -1,42 +1,54 @@
 @media (max-width: 1200px) {
-    p { font-size: 23px; }
-    .sub-heading { font-size: 25px }
+    p { font-size: 21px; }
+    .sub-heading { font-size: 23px }
     .tables { width: 50vw; }
     h1 { font-size: 50px; }
-    h2 { font-size: 46px; }
+    h2 { font-size: 44px; }
     h4 { font-size: 27px;}
 }
 
 @media (max-width: 992px) { 
-    p { font-size : 21px;}
-    .sub-heading { font-size: 23px; }
+    p { font-size : 19px;}
+    .sub-heading { font-size: 21px; }
     .tables { width: 52vw; }
     h1 { font-size: 46px; }
-    h2 { font-size: 42px; }
+    h2 { font-size: 40px; }
     h4 { font-size: 26px;}
 }
 
 @media (max-width: 767px) {
-    p { font-size : 19px; }
-    .sub-heading { font-size: 21px; }
+    p { font-size: 17px; }
+    .sub-heading { font-size: 19px; }
     .tables { width: 64vw; }
     h1 { font-size: 42px; }   
-    h2 { font-size: 38px; }
+    h2 { font-size: 36px; }
     h4 { font-size: 24px;}
 }
 @media (max-width: 576px) { 
-    p { font-size : 17px; }
-    .sub-heading { font-size: 19px; }
+    p { font-size : 15px; }
+    .sub-heading { font-size: 17px; }
     .tables { width: 70vw }
     h1 { font-size: 38px; }   
-    h2 { font-size: 34px; }
+    h2 { font-size: 32px; }
     h4 { font-size: 22px;}
 }
 
 @media (max-width: 420px) { 
-    .sub-heading { font-size: 4.3vw; }
+    /* .sub-heading { font-size: 4.3vw; } */
 }
 
 @media (width: 421px) {
     .sub-heading { white-space: nowrap; }
+}
+
+@media (width: 320px) {
+    .sub-heading { font-size: 13.9px; }
+}
+
+@media ( max-width: 380px ) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 28px;}
+    h4 { font-size: 20px; margin: 25px 0 5px 0;}
+    p { font-size : 15px; }
+    .sub-heading { font-size: 14px; }
 }
