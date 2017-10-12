@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { BootingService } from './booting.service';
 
 @Component({
   selector: 'app-home',
@@ -20,18 +21,21 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 
 export class HomeComponent implements OnInit {
 
-  constructor(
-
-  ) {}
-
+  constructor(private booting: BootingService) {}
+  
   state = 'hidden';
   timeoutID
 
   ngOnInit() {
-    this.timeoutID = setTimeout(() => {
-      document.getElementById('home').scrollIntoView({behavior: "smooth", block:"start"})
+    if (this.booting.firstLoad) {
+      this.booting.firstLoad = false;
       this.state = 'visible'
-    }, 100);
+    } else {
+      this.timeoutID = setTimeout(() => {
+        document.getElementById('home').scrollIntoView({behavior: "smooth", block:"start"})
+        this.state = 'visible'
+      }, 100);
+    }
   }
 
 }

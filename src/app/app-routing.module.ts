@@ -10,13 +10,18 @@ import { PrizesComponent } from './prizes/prizes.component';
 import { PrizesTableComponent } from './prizes/prizes-table/prizes-table.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavArrowComponent } from './nav-arrow/nav-arrow.component';
+import { BootingService } from './home/booting.service';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutMeComponent },
     { path: 'offer', component: OfferComponent },
     { path: 'prizes', component: PrizesComponent },
-    { path: 'contact', component: ContactComponent }
+    { path: 'contact', component: ContactComponent },
+    { path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
 ];
 
 @NgModule({
@@ -29,6 +34,7 @@ const appRoutes: Routes = [
         PrizesTableComponent,
         NavArrowComponent
     ],
+    providers: [BootingService],
     imports: [
         FormsModule,
         CommonModule,
