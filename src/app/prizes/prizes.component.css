@@ -2,34 +2,28 @@ h2::after {
     border-color: #F1C881;
 }
 .main-paragraph {
-    line-height: 35px;
+    line-height: 35px; margin: 0; font-size: 27px;
 }
 
+.main-paragraph span { padding-top: 50px;}
+
+.main-paragraph, .sub-heading {font-size: 25px;}
+
 @media (max-width: 1200px) {
-    .main-paragraph {
-        line-height: 35px;
-    }
+    .main-paragraph, .sub-heading {font-size: 23px;}
 }
 
 @media (max-width: 992px) { 
-    .main-paragraph {
-        line-height: 28px;
-    }
+    .main-paragraph, .sub-heading {font-size: 21px;}
 }
 
 @media (max-width: 767px) {
-    .main-paragraph {
-        line-height: 26px;
-    }
+    .main-paragraph, .sub-heading {font-size: 19px;}
 }
 @media (max-width: 576px) { 
-    .main-paragraph {
-        line-height: 24px;
-    }
+    .main-paragraph, .sub-heading {font-size: 17px;}
 }
 
 @media ( max-width: 380px ) {
-    .main-paragraph {
-        line-height: 22px;
-    }
+    .main-paragraph, .sub-heading {font-size: 15px;}
 }

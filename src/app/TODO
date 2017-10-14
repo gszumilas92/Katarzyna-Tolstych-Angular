@@ -8,7 +8,7 @@ strefamyśli.pl design
 //TODO NOW
 29. Mapka dojazdu w postaci modala + icona w footerze
 34. cytaty na stronie mają się zmieniać w zależności od zakładki otwartej (Cennik, Oferta, Kontakt, O mnie)
-33. Redesign Contact for Firefox
+
 
 //Done + TODO by Client
 2. Menu Specjalizujemy się w (icony) // Question : Do czego mają nawigować icony? // W fazie rozwoju projektu   
@@ -43,6 +43,7 @@ strefamyśli.pl design
 30. .sub-heading @media zmniejszac font
 31. ostylowanie przycisku wyslij
 32. strzalki potrzebuja padding-bottom przy mniejszych rozdzielczosciach
+33. Redesign Contact for Firefox
 
 //Undone Sections
 
