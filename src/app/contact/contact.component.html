@@ -16,21 +16,29 @@
         <div class="tables mx-auto">
             <form (ngSubmit)="onSubmit(f)" #f="ngForm">
                 <fieldset class="col-12 m-auto">
-                    <label class="col-9 mx-auto" for="username">Imię/Pseudonim*</label>
-                    <input class="col-10 mx-auto" type="text" id="username" placeholder="Twoje imię" ngModel name="username" required #username="ngModel">
-                    <span class="mx-auto" *ngIf="!username.valid && username.touched">To pole jest obowiązkowe!</span>
-                    <label class="col-9 mx-auto" for="email">E-mail*</label>
-                    <input class="col-10 mx-auto" type="email" id="email" placeholder="Twój email" ngModel name="email" required email #email="ngModel">
-                    <span class="mx-auto" *ngIf="!email.valid && email.touched">Podaj prawidłowy adres email!</span>
-                    <label class="col-9 mx-auto" for="contact">Preferowana forma kontaktu*</label>
-                    <select class="col-10 mx-auto" [ngModel]="'personal'" name="type" required #type="ngModel">
-                        <option value="personal" selected>Osobista</option>
-                        <option value="skype">Skype</option>
-                        <option value="email">E-mail</option>
-                    </select>
-                    <span class="mx-auto" *ngIf="!email.valid && email.touched || !username.valid && username.touched || !type.valid && type.touched">Wszystkie pola oznaczone gwiazdką są obowiązkowe!</span>
+                    <div class="form-group">
+                        <label class="col-9 mx-auto" for="username">Imię/Pseudonim*</label>
+                        <input class="col-10 mx-auto" type="text" id="username" placeholder="Twoje imię" ngModel name="username" required #username="ngModel">
+                        <span class="mx-auto" *ngIf="!username.valid && username.touched">To pole jest obowiązkowe!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-9 mx-auto" for="email">E-mail*</label>
+                        <input class="col-10 mx-auto" type="email" id="email" placeholder="Twój email" ngModel name="email" required email #email="ngModel">
+                        <span class="mx-auto" *ngIf="!email.valid && email.touched">Podaj prawidłowy adres email!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-9 mx-auto" for="contact">Preferowana forma kontaktu*</label>
+                        <select class="col-10 mx-auto" [ngModel]="'personal'" name="type" required #type="ngModel">
+                            <option value="personal" selected>Osobista</option>
+                            <option value="skype">Skype</option>
+                            <option value="email">E-mail</option>
+                        </select>
+                        <span class="mx-auto" *ngIf="!email.valid && email.touched || !username.valid && username.touched || !type.valid && type.touched">Wszystkie pola oznaczone gwiazdką są obowiązkowe!</span>
+                    </div>
+                    <div class="form-group">
+                        <button class="mx-auto submit-button" type="submit" [disabled]="!f.valid">WYŚLIJ</button>
+                    </div>
                 </fieldset>
-                <button class="mx-auto submit-button" type="submit" [disabled]="!f.valid">WYŚLIJ</button>
             </form>
         </div>
     </div>

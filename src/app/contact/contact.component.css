@@ -1,122 +1,44 @@
-form {
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    margin-top: 4vh;
-}
+h2::after {border-color: rgba(11, 124, 11, 0.4);}
+/* FORM ELEMENTS */
+/* Containers */
+.form-group {display: flex;flex-direction: column;justify-content: space-between;padding: 10px 0;}
+fieldset { padding: 0; border: 0; }
+form, input, select {border: 3px solid rgba(11, 124, 11, 0.4);border-radius: 1.5vw;}
+form { padding: 25px 0 15px 0;}
+/* Elements */
+label, span  { padding: 5px;}
+input, select { padding: 15px;}
+button { width: 140px; height: 50px;margin: 10px 0;border-radius: 1.5vw; border: 1px solid #FAFAFA; background-color: rgba(11, 124, 11, 0.6); outline: none;}
+button:focus { border-color: rgba(11, 100, 11, 1); border-width: 1px;}
+/* Error Styling */
+input:focus, select:focus {border-color: rgba(11, 100, 11, 1);}
+span { font-size: 80%; text-align: center; color: #FF0000; font-weight: 600;}
+button[type="submit"]:disabled { color: #B4B4B4; background-color: rgba(11, 150, 11, 0.15);}
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched { border-color: rgba(255, 0, 0, 0.45); }
+input, select, button, span { transition: 0.6s; }
 
-form, input, select {
-    letter-spacing: 1.4px;
-    border: 3px solid rgba(11, 124, 11, 0.4);
-}
-
-form, input, select, label, span {
-    font-size: 105%;
-}
-
-input::content {
-    margin-left: 20px;
-}
-
-option {
-    font-size: 115%;
-}
-
-input, select, label, span {
-    border-radius: 1.5vw;
-    padding: 2% 2% 2% 4%;
-    outline: none;
-}
-
-fieldset {
-    padding: 8% 0;
-    border: none;
-    display: flex;
-}
-
-label {
-    margin-top: 1%;    
-}
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:#ACACAC;
-}
-
-.submit-button {
-    margin: 0 0 5% 0;
-    padding: 3% 13%;
-    letter-spacing: 1px;
-    background-color: rgba(11, 150, 11, 0.6);
-    display:flex;
-    justify-content: center;
-    width: 30%;
-    text-align: center;
-    border-radius: 1.5vw;
-    border: 1px solid #F5F5F5;
-    outline: none;
-}
-
-.submit-button:focus {
-    border-color: rgba(11, 100, 11, 1);
-    border-width: 1px;
-}
-
-
-button[type="submit"]:disabled {
-    color: #B4B4B4;
-    background-color: rgba(11, 150, 11, 0.15);
-}
-
-h2::after {
-    border-color: rgba(11, 124, 11, 0.4);
-}
-
-span {
-    font-size: 80%;
-    text-align: center;
-    color: #FF0000;
-    font-weight: 600;
-}
-
-input.ng-invalid.ng-touched, select.ng-invalid.ng-touched {
-    border-color: rgba(255, 0, 0, 0.45);
-}
-
-input, select, button, span {
-    transition: 0.6s;
-}
-
-input:focus, select:focus {
-    border-color: rgba(11, 100, 11, 1);
-}
-
-.center-text {
-    margin: 0;
-}
-
+/* Media */
 @media (max-width: 1200px) {
     form, input, select, label, span { font-size: 100%; }
     option { font-size: 110%; }
     span { font-size: 78%; }
-    .submit-button { font-size: 100%; }
+    button { font-size: 90%; width: 120px; }
 }
-
+    
 @media (max-width: 992px) { 
     form, input, select, label, span { font-size: 95%; }
     span { font-size: 76%; }
-    .submit-button { font-size: 90%; width: 31%;}    
-    input, select, label, span { padding: 2.5%  2.5%  2.5% 4%; }
+    button { font-size: 85%; width: 110px; }    
 }
 
 @media (max-width: 767px) {
     form, input, select, label, span { font-size: 90%; }
     span { font-size: 72%; }
-    .submit-button { font-size: 85%; width: 32%; padding: 4% 13%}  
-    input, select, label, span { padding: 3%  3%  3% 4%; }
+    button { font-size: 80%; height: 45px; }  
 }
 
 @media (max-width: 576px) { 
     form, input, select, label, span { font-size: 85%; }
     span { font-size: 70%; }
-    .submit-button { font-size: 80%; width: 33%; padding: 5% 13%}        
+    button { height: 40px; width: 100px; }        
 }
