@@ -22,8 +22,9 @@ apiController(app);
 contactFormController(app);
 
 // Return Index
-app.get('/', (req, res) => {
-    res.send(index)
-});
+
+app.get('*', (req, res) => {
+    res.send(index) 
+})
 
 app.listen(port);
