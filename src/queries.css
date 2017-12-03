@@ -1,9 +1,8 @@
 @media (max-width: 1200px) {
-    p { font-size: 21px; }
+    p { font-size: 1.8rem }
     .sub-heading { font-size: 23px }
     .tables { width: 50vw; }
-    h1 { font-size: 50px; }
-    h2 { font-size: 44px; }
+    h2 { font-size: 4.4rem }
     h4 { font-size: 27px;}
 }
 
@@ -11,7 +10,6 @@
     p { font-size : 19px;}
     .sub-heading { font-size: 21px; }
     .tables { width: 52vw; }
-    h1 { font-size: 46px; }
     h2 { font-size: 40px; }
     h4 { font-size: 26px;}
 }
@@ -20,7 +18,6 @@
     p { font-size: 17px; }
     .sub-heading { font-size: 19px; }
     .tables { width: 64vw; }
-    h1 { font-size: 42px; }   
     h2 { font-size: 36px; }
     h4 { font-size: 24px;}
 }
@@ -28,7 +25,6 @@
     p { font-size : 15px; }
     .sub-heading { font-size: 17px; }
     .tables { width: 70vw }
-    h1 { font-size: 38px; }   
     h2 { font-size: 32px; }
     h4 { font-size: 22px;}
 }
@@ -46,7 +42,6 @@
 }
 
 @media ( max-width: 380px ) {
-    h1 { font-size: 32px; }
     h2 { font-size: 28px;}
     h4 { font-size: 20px; margin: 25px 0 5px 0;}
     p { font-size : 15px; }

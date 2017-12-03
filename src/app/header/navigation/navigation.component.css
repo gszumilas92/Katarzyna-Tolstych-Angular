@@ -1,8 +1,8 @@
 a {
     display: flex;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    font-size: 24px;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.5rem;
     color: inherit;    
     text-transform: uppercase;
     white-space: nowrap;
@@ -15,7 +15,6 @@ li {
 
 nav {
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-    padding-bottom: 30vh;
 }
 
 ul {
@@ -64,28 +63,4 @@ a::after {
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
-}
-
-@media (max-width: 1200px) {
-    a { font-size: 23px; }
-    a::after { width: 2.5vw; }
-}
-
-@media (max-width: 992px) { 
-    a { font-size: 21px; }    
-    a::after { width: 3vw; }
-}
-
-@media (max-width: 767px) {
-    a { font-size: 20px; }        
-    a::after { width: 3.5vw; }
-}
-
-@media (max-width: 576px) { 
-    a { font-size: 19px; }       
-    a::after { width: 4vw; }
-}
-
-@media ( max-width: 380px ) {
-    a { font-size: 15px }
 }
