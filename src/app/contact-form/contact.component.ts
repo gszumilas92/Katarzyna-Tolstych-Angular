@@ -25,10 +25,6 @@ export class ContactComponent implements OnInit {
   state = 'hidden';
   timeoutID
 
-  onSubmit(form: NgForm) {
-    
-  }
-
   ngOnInit() {
     this.timeoutID = setTimeout(() => {
       document.getElementById('contact').scrollIntoView({behavior: "smooth", block:"start"})
