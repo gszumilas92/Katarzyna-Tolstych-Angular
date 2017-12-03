@@ -1,2 +1,6 @@
-private
 node_modules
+
+#Private Folders
+passwords
+private
+messages

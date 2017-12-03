@@ -27,6 +27,7 @@ const appRoutes: Routes = [
         redirectTo: 'home',
         pathMatch: 'full'
     },
+    { path: '**', component: ContactComponent}
 ];
 
 @NgModule({
