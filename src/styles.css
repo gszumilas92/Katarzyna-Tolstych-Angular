@@ -56,7 +56,6 @@ h1,h2,h3,h4 {
 
 h1 {
     font-size: 4rem;
-    padding: 40vh 0 1.5vh 0;    
     display: flex;
     color: inherit;
     margin-bottom: 2rem;
