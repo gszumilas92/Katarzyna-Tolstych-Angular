@@ -3,56 +3,14 @@
 }
 
 .certificates {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 4rem;
 }
 
 .certificates img {
-    height: 300px;
-    width: 200px;
+    width: 22rem;
     cursor: pointer;
 }
 
-.photo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-12.photo-container {
-    display:none;
-}
-
 .author_photo {
-    max-width: 200px;
-    max-height: 266px;
-}
-
-@media (max-width: 992px) {
-    .author_photo {
-        max-width: 150px;
-    }
-}
-
-@media (max-width: 767px) {
-    .author_photo {
-        max-width: 120px;
-    }
-
-    .photo-container {
-        margin-bottom: 2vh;
-    }
-
-    .col-xl-2.photo-container {
-        display: none;
-    }
-    
-    .col-12.photo-container {
-        display: flex;
-    }
-}
-
-@media ( max-width: 380px ) {
-    .author_photo { max-width: 100px; }
-    .certificates {height: 270px; width: 190px;}
+    height: 18rem;
 }

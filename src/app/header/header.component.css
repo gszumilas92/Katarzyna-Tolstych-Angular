@@ -31,15 +31,9 @@ header {
     }
 }
 
-@media (max-width: 992px) { 
-}
-
-@media (max-width: 767px) {
-}
-
 @media (max-width: 576px) { 
-    .sub-header { margin-left: 5vw; margin-right:5vw;}
-}
-
-@media (max-width:380) {
+    .sub-header {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }

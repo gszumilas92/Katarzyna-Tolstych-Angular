@@ -29,7 +29,6 @@ export class NavArrowComponent implements OnInit {
   ) { }
 
   currentID
-  // components = ['home','about','offer','prizes','contact'];
   components = ['home','about','offer','prizes','contact']
   rightState = 'inactive'
   leftState = 'inactive'
