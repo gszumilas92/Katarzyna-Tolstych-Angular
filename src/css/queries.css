@@ -17,16 +17,10 @@
     html {
         font-size: 46%;
     }
-    .tables {
-        width: 50rem;
-    }
 }
 
 @media (max-width: 420px) { 
     html {
         font-size: 44%;
-    }
-    .tables {
-        width: 40rem;
     }
 }

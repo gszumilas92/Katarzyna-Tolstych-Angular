@@ -1,41 +1,55 @@
 footer {
-    margin-top: 10vh;
-    padding-top: 2vh;
-    padding-bottom: 4vh;
+    margin-top: 5vh;
+    padding-top: .5vh;
+    padding-bottom: 1vh;
     background:linear-gradient(rgba(0, 90, 0, 1), rgba(0, 45, 0, 1));
     color: #fff;
     font-weight: 300;
 }
 
-.flex-col {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-i {
-    display:flex;
-    font-style: normal;
-    font-size: inherit;
-    margin-left: -20px;
+.icon_text_wrapper {
+    display: inline-flex;
     transition-property: scale();
     transition-duration: 0.5s;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-i:hover {
+/* TODO: Fix hovering single elements
+.icon_text_wrapper li:hover,
+.icon_text_wrapper i:hover {
     transform: scale(1.2);
     transition-property: scale();
     transition-duration: 0.5s;
     cursor: pointer;
 }
+*/
 
-i span {
-    margin-left: 20px;
+.text_container {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.text_container li,
+.icon_container i {
+    margin-bottom: .5rem;
+}
+
+.icon_container {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+
+i:before {
+    font-size: 1.6rem;
+    margin: 0;
 }
 
 li {
-    margin: 5px 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     white-space: nowrap;
 }
 
