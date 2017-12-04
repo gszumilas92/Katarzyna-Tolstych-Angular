@@ -1,38 +1,31 @@
 .map__container {
-  height: 400px;
+  height: 40rem;
   width: 100%;
   border: 1.5px solid #bbb;
 }
 
-.contact_details li {
+.contact_details {
+  margin-top: 4rem;
+  height: 32rem;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  margin: 50px 0;
+  justify-content: space-between;
+}
+
+.contact_details li {
+  font-size: 2rem;
 }
 
 .contact_details li span {
-  justify-content: center;
-  display: flex;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
-.contact_details li i {
+.contact_details li > * {
   display: flex;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .contact_details li i::before {
-  margin: 0;
-  padding: 0;
   font-size: 140%;
-}
-
-.contact_details {
-  white-space: nowrap;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  
 }
