@@ -6,7 +6,7 @@ import { AgmCoreModule } from '@agm/core';
   selector: 'app-google-map',
   template: `
   <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-    <agm-marker [latitude]="lat" [longitude]="lng" [title]="tralalla"></agm-marker>
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
   </agm-map>`,
   styles: [`agm-map {height: 100%}`]
 })

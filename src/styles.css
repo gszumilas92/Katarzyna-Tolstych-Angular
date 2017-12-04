@@ -6,12 +6,6 @@
 @import 'css/grid.css';
 @import 'css/queries.css';
 
-/*Special Classes*/
-.tables {
-    width: 60rem;
-    transition-property: 'width';
-    transition-duration: 0.5s;
-}
 /*Index layers*/
 .index-99 { z-index: 99; }
 .index-98 { z-index: 98; }
@@ -19,3 +13,11 @@
 /*Positions*/
 .relative { position:relative; }
 .absolute { position:absolute;}
+
+/*Special Classes*/
+.tables {
+    width: 60rem;
+    transition-property: 'width';
+    transition-duration: 0.5s;
+}
+

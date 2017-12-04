@@ -33,3 +33,6 @@ export class ContactComponent implements OnInit {
   }
 
 }
+
+
+// (ngSubmit)="onSubmit(f)"
