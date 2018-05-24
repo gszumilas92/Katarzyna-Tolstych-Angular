@@ -21,3 +21,20 @@
     transition-duration: 0.5s;
 }
 
+/* TEMP */
+.policy-wrapper {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 0 20rem;
+}
+
+.policy-wrapper li {
+    font-size: 2rem;
+}
+.policy-wrapper h2 {
+    font-size: 2.4rem;
+}
+.policy a { 
+    color: #fff;
+}

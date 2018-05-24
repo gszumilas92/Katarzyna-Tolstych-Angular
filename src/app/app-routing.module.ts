@@ -6,6 +6,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { HomeComponent } from "./home/home.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { OfferComponent } from './offer/offer.component';
+import { PolicyComponent } from './policy/policy.component';
 import { PrizesComponent } from './prizes/prizes.component';
 import { PrizesTableComponent } from './prizes/prizes-table/prizes-table.component';
 import { ContactComponent } from './contact-form/contact.component';
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     { path: 'offer', component: OfferComponent },
     { path: 'prizes', component: PrizesComponent },
     { path: 'contact', component: ContactPlainComponent },
+    { path: 'policy', component: PolicyComponent },
     { path: '',
         redirectTo: 'home',
         pathMatch: 'full'
@@ -37,6 +39,7 @@ const appRoutes: Routes = [
         OfferComponent,
         ContactComponent,
         PrizesComponent,
+        PolicyComponent,
         PrizesTableComponent,
         NavArrowComponent,
         ContactPlainComponent,
