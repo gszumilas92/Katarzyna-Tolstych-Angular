@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  src: local('Lato Regular'), local('Lato Regular'), url(../assets/fonts/Lato-Regular.ttf) format('truetype');
+}
+
 a {
   text-decoration: none;
 }
